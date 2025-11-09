@@ -9,14 +9,50 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import zscore
+from abc import ABC, abstractmethod
 
-class EDAUtils:
+class EDAInterface(ABC):
+    """
+    Abstract Base Class for EDA utilities.
+    Defines the contract for all EDA operations.
+    """
+
+    @abstractmethod
+    def calculate_summary_statistics(self, df):
+        pass
+
+    @abstractmethod
+    def detect_outliers(self, df, columns, threshold=3):
+        pass
+
+    @abstractmethod
+    def handle_missing_values(self, df, strategy="median", columns=None):
+        pass
+
+    @abstractmethod
+    def plot_correlation_heatmap(self, df):
+        pass
+
+    @abstractmethod
+    def plot_scatter(self, df, x, y):
+        pass
+
+    @abstractmethod
+    def plot_histogram(self, df, column, bins=30):
+        pass
+
+    @abstractmethod
+    def plot_time_series(self, df, timestamp_column, value_columns):
+        pass
+
+    @abstractmethod
+    def create_bubble_chart(self, df, x, y, bubble_size, color_column=None):
+        pass
+
+class EDAUtils(EDAInterface):
     """
     A utility class for performing exploratory data analysis (EDA) tasks.
-    
-    This class contains static methods for various EDA operations, such as calculating summary statistics,
-    detecting outliers, plotting visualizations, and handling missing values. Each method is designed to
-    work with pandas DataFrames and provides flexibility for different use cases.
+    Implements the EDAInterface.
     """
 
     @staticmethod
@@ -62,9 +98,9 @@ class EDAUtils:
         Returns:
             None
         """
-        # Plot a heatmap of the correlation matrix
-        plt.figure(figsize=(12, 8))
-        correlation_matrix = df.corr()
+        # Select only numeric columns for correlation
+        numeric_df = df.select_dtypes(include=["number"])
+        correlation_matrix = numeric_df.corr()
         sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
         plt.title("Correlation Heatmap")
         plt.show()
