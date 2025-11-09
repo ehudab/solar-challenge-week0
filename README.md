@@ -150,5 +150,25 @@ The Solar Potential Dashboard is an interactive Streamlit application that allow
 - Use the sidebar to select countries and metrics.
 - View the boxplots and top 10 values for the selected metric.
 
+## Screenshots
+
+### Streamlit Dashboard
+- **Dashboard Overview**: ![Dashboard Overview](screenshots/streamlit_dashboard_overview.png)
+- **Country Selection Widget**: ![Country Selection](screenshots/streamlit_country_selection.png)
+- **Metric Selection Widget**: ![Metric Selection](screenshots/streamlit_metric_selection.png)
+- **Boxplot Visualization**: ![Boxplot Visualization](screenshots/streamlit_boxplot_visualization.png)
+- **Top Regions Table**: ![Top Regions Table](screenshots/streamlit_top_regions_table.png)
+
+### Compare Countries Notebook
+- **Boxplots for GHI, DNI, DHI**: ![Boxplots](screenshots/compare_countries_boxplots.png)
+- **Summary Statistics Table**: ![Summary Statistics](screenshots/compare_countries_summary_table.png)
+- **Bar Chart Ranking Countries by Average GHI**: ![Average GHI](screenshots/compare_countries_avg_ghi.png)
+
+### Repository Structure
+- **Folder Structure**: ![Repository Structure](screenshots/github_repo_structure.png)
+
+### Environment Setup
+- **Terminal Commands**: ![Environment Setup](screenshots/environment_setup_terminal.png)
+
 ## Contributing
 Feel free to submit issues or pull requests for improvements.
