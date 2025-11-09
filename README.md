@@ -105,3 +105,4 @@ This repository contains EDA notebooks for analyzing solar datasets from differe
 1. Ensure the environment is set up as described above.
 2. Open the desired notebook in Jupyter or VS Code.
 3. Execute the cells sequentially to reproduce the analysis and visualizations.
+3. Execute the cells sequentially to reproduce the analysis and visualizations.
