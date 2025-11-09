@@ -105,4 +105,50 @@ This repository contains EDA notebooks for analyzing solar datasets from differe
 1. Ensure the environment is set up as described above.
 2. Open the desired notebook in Jupyter or VS Code.
 3. Execute the cells sequentially to reproduce the analysis and visualizations.
-3. Execute the cells sequentially to reproduce the analysis and visualizations.
+
+# Solar Potential Dashboard
+
+## Overview
+The Solar Potential Dashboard is an interactive Streamlit application that allows users to visualize and analyze solar potential metrics (GHI, DNI, DHI) across multiple countries.
+
+## Features
+- Select countries to visualize.
+- Generate boxplots for GHI, DNI, and DHI metrics.
+- View a table of top 10 values for the selected metric.
+- Clean and professional design with intuitive navigation.
+
+## Prerequisites
+- Python 3.8 or higher
+- Streamlit library
+- Pandas library
+- Seaborn library
+- Matplotlib library
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ehudab/solar-challenge-week0.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd solar-challenge-week0
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Dashboard
+1. Activate the virtual environment (if applicable).
+2. Run the Streamlit app:
+   ```bash
+   streamlit run app/main.py
+   ```
+3. Open the provided URL in your browser (e.g., http://localhost:8501).
+
+## Usage
+- Use the sidebar to select countries and metrics.
+- View the boxplots and top 10 values for the selected metric.
+
+## Contributing
+Feel free to submit issues or pull requests for improvements.
