@@ -37,3 +37,38 @@
      git push -u origin setup-task
      ```
    - Open a Pull Request on GitHub to merge `setup-task` into `main`.
+
+## Exploratory Data Analysis Notebooks
+
+### Overview
+This repository contains EDA notebooks for analyzing solar datasets from different countries. Each notebook provides a structured approach to data cleaning, analysis, and visualization.
+
+### Notebooks
+
+#### Togo EDA Notebook
+- **File**: `notebooks/togo_eda.ipynb`
+- **Features**:
+  - Summary statistics and missing value report
+  - Outlier detection and cleaning
+  - Time series analysis
+  - Cleaning impact analysis
+  - Correlation and relationship exploration
+  - Wind distribution analysis
+  - Temperature analysis
+
+#### Sierra Leone EDA Notebook
+- **File**: `notebooks/sierraleone_eda.ipynb`
+- **Features**:
+  - Summary statistics and missing value report
+  - Outlier detection and cleaning
+  - Time series analysis
+  - Cleaning impact analysis
+  - Correlation and relationship exploration
+  - Wind distribution analysis
+  - Temperature analysis
+  - Bubble chart visualization
+
+### How to Run
+1. Ensure the environment is set up as described above.
+2. Open the desired notebook in Jupyter or VS Code.
+3. Execute the cells sequentially to reproduce the analysis and visualizations.
